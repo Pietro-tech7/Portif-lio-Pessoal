@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pietro Iassem · O — Tráfego & Engenharia de Software</title>
+  <meta name="description" content="Portfólio de Pietro Iassem Elias Cornélio (O Comandante): Traffic Manager e Estudante de Engenharia de Software em Teresina, PI.">
+
+  <!-- Fontes: Big Shoulders (display/insígnia), Inter (corpo), JetBrains Mono (dados/rótulos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de progresso dupla (assinatura visual: tráfego = ouro / engenharia = ciano) -->
+  <div class="track-progress" aria-hidden="true">
+    <div class="track-progress__gold" id="progressGold"></div>
+    <div class="track-progress__cyan" id="progressCyan"></div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark">OC</span>
+        <span class="brand__name">O COMANDANTE</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#skills" class="nav__link">Habilidades</a>
+        <a href="#projetos" class="nav__link">Projetos</a>
+        <a href="#experiencia" class="nav__link">Experiência</a>
+        <a href="#contato" class="nav__link nav__link--cta">Contato</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow reveal">TRANSMISSÃO ATIVA · TERESINA, PI — BRASIL</p>
+
+        <h1 class="hero__name reveal">
+          PIETRO<br><span>IASSEM</span>
+        </h1>
+
+        <p class="hero__role reveal">
+          Gestor de Tráfego <span class="dot" aria-hidden="true">•</span> Estudante de Engenharia de Software
+        </p>
+
+        <p class="hero__bio reveal">
+          Opero em duas frentes simultâneas: comando estratégias de tráfego pago que convertem e
+          construo software com engenharia sólida. Disciplina, análise e ensino — essa é a base de
+          tudo que entrego, sob a marca <strong>O Comandante</strong>.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#projetos" class="btn btn--gold">Ver projetos</a>
+          <a href="#contato" class="btn btn--outline">Falar comigo</a>
+        </div>
+
+        <!-- Painel de status ao vivo — elemento assinatura, tema "central de comando" -->
+        <div class="status-panel reveal" role="status" aria-live="polite">
+          <div class="status-panel__row">
+            <span class="status-panel__label">HORÁRIO LOCAL (TERESINA)</span>
+            <span class="status-panel__value" id="localTime">--:--:--</span>
+          </div>
+          <div class="status-panel__row">
+            <span class="status-panel__label">COORDENADAS</span>
+            <span class="status-panel__value">05°05'S, 42°48'W</span>
+          </div>
+          <div class="status-panel__row">
+            <span class="status-panel__label">LEMA</span>
+            <span class="status-panel__value status-panel__value--motto">APRENDER. ANALISAR. COLOCAR EM PRÁTICA.</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para a próxima seção">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <p class="section__eyebrow reveal">01 · SOBRE MIM</p>
+        <h2 class="section__title reveal">Duas trilhas, um mesmo padrão de disciplina.</h2>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Sou Pietro Iassem Elias Cornélio, atuo como <strong>Gestor de Tráfego</strong> sob a marca
+              <strong>O Comandante</strong> e curso <strong>Engenharia de Software</strong>. Não vejo tráfego
+              e código como caminhos separados — os dois exigem a mesma coisa: ler dados com frieza,
+              montar sistemas repetíveis e corrigir rota rápido quando algo não funciona.
+            </p>
+            <p>
+              Minha base é uma mentalidade de missão: metas claras, métricas acompanhadas de perto e
+              entrega no prazo. Isso se reflete tanto nas campanhas que planejo para clientes quanto
+              nos sistemas que desenvolvo, como o <strong>Clínica Equilíbrio</strong>, um sistema de
+              gestão construído em Node.js.
+            </p>
+            <p>
+             Baseado em Teresina (PI), trabalho em uma empresa de Tráfego e estudo com um método próprio 
+             e intensivo — buscando evolução contínua tanto na teoria quanto na prática.
+            </p>
+          </div>
+
+          <div class="about__tracks reveal">
+            <div class="track-card track-card--gold">
+              <span class="track-card__tag">TRÁFEGO</span>
+              <h3>Gestão de Tráfego</h3>
+              <p>Meta Ads, funis de conversão, copywriting orientado a dados e sistemas de persona para campanhas escaláveis.</p>
+            </div>
+            <div class="track-card track-card--cyan">
+              <span class="track-card__tag">ENGENHARIA</span>
+              <h3>Engenharia de Software</h3>
+              <p>JavaScript, Node.js/Express, estrutura de dados e banco de dados aplicados a produtos reais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__eyebrow reveal">02 · HABILIDADES</p>
+        <h2 class="section__title reveal">Ferramentas das duas trincheiras.</h2>
+
+        <div class="skills__grid">
+          <div class="skills__col reveal">
+            <h3 class="skills__heading skills__heading--gold">Tráfego &amp; Growth</h3>
+            <ul class="skill-list">
+              <li class="skill-list__item">
+                <span>Meta Ads (Facebook &amp; Instagram)</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--gold" style="--level:95%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>Google Ads</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--gold" style="--level:80%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>Copywriting &amp; Persona</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--gold" style="--level:90%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>Funis de Conversão</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--gold" style="--level:88%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>Análise de Métricas</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--gold" style="--level:85%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills__col reveal">
+            <h3 class="skills__heading skills__heading--cyan">Engenharia de Software</h3>
+            <ul class="skill-list">
+              <li class="skill-list__item">
+                <span>JavaScript (ES6+)</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--cyan" style="--level:85%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>Node.js &amp; Express</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--cyan" style="--level:75%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>HTML &amp; CSS</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--cyan" style="--level:90%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>Estrutura de Dados</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--cyan" style="--level:70%"></div></div>
+              </li>
+              <li class="skill-list__item">
+                <span>Banco de Dados</span>
+                <div class="skill-bar"><div class="skill-bar__fill skill-bar__fill--cyan" style="--level:70%"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <p class="section__eyebrow reveal">03 · PROJETOS</p>
+        <h2 class="section__title reveal">O que já foi construído e implantado.</h2>
+
+        <div class="projects__grid">
+
+          <article class="project-card reveal">
+            <span class="project-card__tag project-card__tag--gold">TRÁFEGO</span>
+            <h3>Sistema de Persona — O Comandante</h3>
+            <p>Documento mestre de sistema (prompt), persona interativa em HTML com navegação por
+              abas e busca, e template estruturado de campanha para Meta Ads — pronto para
+              compartilhar com clientes via GitHub Pages ou Vercel.</p>
+            <div class="project-card__stack">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>Meta Ads</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-card__tag project-card__tag--cyan">ENGENHARIA</span>
+            <h3>Clínica Equilíbrio</h3>
+            <p>Sistema de gestão para clínicas com backend em Node.js/Express — autenticação,
+              cadastro de pacientes e agendamentos, com foco em resolver problemas reais de
+              configuração, segurança e persistência de dados.</p>
+            <div class="project-card__stack">
+              <span>Node.js</span><span>Express</span><span>JWT</span><span>REST</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-card__tag project-card__tag--gold">TRÁFEGO</span>
+            <h3>Template de Campanha Meta Ads</h3>
+            <p>Documento estruturado (.docx) para planejamento tático de campanhas: público,
+              orçamento, criativos e cronograma — usado como padrão de entrega para clientes de
+              tráfego pago.</p>
+            <div class="project-card__stack">
+              <span>Planejamento</span><span>Copywriting</span><span>KPIs</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-card__tag project-card__tag--gold">TRÁFEGO</span>
+            <h3>Dashboard de Métricas de Campanha</h3>
+            <p>Painel visual em JavaScript puro para acompanhar CPA, CTR e ROAS de campanhas em
+              tempo real, pensado para leitura rápida em reuniões de acompanhamento com clientes.</p>
+            <div class="project-card__stack">
+              <span>JavaScript</span><span>Canvas</span><span>Dados</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-card__tag project-card__tag--cyan">ENGENHARIA</span>
+            <h3>Ferramentas de Estudo Interativas</h3>
+            <p>Quizzes interativos para revisão de Estrutura de Dados e Programação Web, Métodos de análise mental como 
+              o Pálacio da memoria, construídos como parte de um método próprio de estudo intensivo com modos de "revisão rápida" e
+              "modo prova".</p>
+            <div class="project-card__stack">
+              <span>JavaScript</span><span>DOM</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-card__tag project-card__tag--cyan">ENGENHARIA</span>
+            <h3>Landing Pages de Alta Conversão</h3>
+            <p>Páginas leves e rápidas, construídas em HTML/CSS/JS puro, otimizadas para carregamento
+              e conversão — ponte direta entre as campanhas de tráfego e o código que as sustenta.</p>
+            <div class="project-card__stack">
+              <span>HTML</span><span>CSS</span><span>Performance</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIÊNCIA ===================== -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <p class="section__eyebrow reveal">04 · EXPERIÊNCIA &amp; FORMAÇÃO</p>
+        <h2 class="section__title reveal">A linha do tempo da missão.</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--gold"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Em andamento</span>
+              <h3>Traffic Manager — O Comandante</h3>
+              <p>Planejamento e execução de campanhas de tráfego pago (Meta Ads) para clientes,
+                incluindo criação de personas, templates de campanha e materiais de entrega
+                profissionais.</p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--cyan"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Em andamento</span>
+              <h3>Estudante de Engenharia de Software</h3>
+              <p>Formação com foco em Estrutura de Dados, Programação Web, Banco de Dados, Ciência de
+                Dados e Requisitos e Modelagem de Software — aplicada diretamente em projetos como o
+                Clínica Equilíbrio.</p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--cyan"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Desenvolvimento contínuo</span>
+              <h3>Sistema Clínica Equilíbrio</h3>
+              <p>Construção e depuração de um backend em Node.js/Express: resolução de conflitos de
+                módulos e portas, revisão de código e ajustes de segurança (JWT, credenciais).</p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--gold"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">Base</span>
+              <h3>Metodologia própria de estudo, execução e memorização</h3>
+              <p>Criação de um método estruturado em etapas, com modos de revisão rápida e simulado,
+                aplicado tanto aos estudos técnicos quanto ao planejamento de campanhas.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <p class="section__eyebrow reveal">05 · CONTATO</p>
+        <h2 class="section__title reveal">Vamos planejar a próxima operação.</h2>
+        <p class="contact__intro reveal">
+          Disponível para projetos de tráfego pago, desenvolvimento de software ou os dois juntos.
+          Escolha o canal e entre em contato — respondo rápido.
+        </p>
+
+        <div class="contact__grid">
+          <a href="mailto:corpietro@gmail.com.br" class="contact-card reveal">
+            <span class="contact-card__icon" aria-hidden="true">✉</span>
+            <span class="contact-card__label">E-mail</span>
+            <span class="contact-card__value">corpietro@gmail.com.br</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/pietro-iassem-62a222356/" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+            <span class="contact-card__icon" aria-hidden="true">in</span>
+            <span class="contact-card__label">LinkedIn</span>
+            <span class="contact-card__value">/in/pietro-iassem-62a222356/</span>
+          </a>
+
+          <a href="https://github.com/Pietro-tech7" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+            <span class="contact-card__icon" aria-hidden="true">&lt;/&gt;</span>
+            <span class="contact-card__label">GitHub</span>
+            <span class="contact-card__value">github.com/Pietro-tech7</span>
+          </a>
+
+          <a href="https://www.instagram.com/pietro.iec" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+            <span class="contact-card__icon" aria-hidden="true">◎</span>
+            <span class="contact-card__label">Instagram</span>
+            <span class="contact-card__value">@pietro.iec</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__motto">APRENDER. <span>ANALISAR.</span> COLOCAR EM PRÁTICA.</p>
+      <p class="footer__copy">© <span id="year"></span> Pietro Cornélio — O Comandante. Teresina, PI, Brasil.</p>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="style.js"></script>
+</body>
+</html>
